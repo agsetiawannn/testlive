@@ -1,0 +1,159 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background: #ffae00;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin: 0 22px;
+  }
+  
+  .navbar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ddd;
+  }
+  
+  /* Section styles */
+  section {
+    padding: 80px 0; 
+    min-height: 100vh; 
+  }
+  
+  .container {
+    width: 8%;
+    margin: auto;
+    transition: all 0.5s ease;
+  }
+  
+  /* Home section */
+  header {
+    text-align:center;
+    background: #ffae00;
+    color: #000000;
+    padding: 200px 0;
+  }
+
+header img {
+    max-width: 100%; 
+    height: auto;     
+    border-radius: 1%;
+    display: block;  
+    margin: 10 auto;   
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;   
+    height: 100%;        
+  }
+  
+  /* About Me */
+  .bio, .education, .skills, .contact-info {
+    padding: 15px;
+    background: #ffae00;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Skills */
+  .skills ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skills ul li {
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #ffae00;
+    color: #000000;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    header img {
+      max-width: 500px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header img {
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    .navbar ul li a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+    }
+  
+    .navbar ul li a {
+      font-size: 14px;
+    }
+  
+    section {
+      padding: 100px 5px;
+    }
+  }
